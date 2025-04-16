@@ -21,5 +21,9 @@ public class Main {
         Box<Paper> boxForPaper = new Box<>();
         boxForPaper.putItem(firstPartPaper);
         System.out.println("Третья партия мусора " + boxForPaper.getItem().display());
+
+        TwoCellsBox<Plastic, Glass> boxForPlasticAndGlass = new TwoCellsBox<>();
+        boxForPlasticAndGlass.putItem(firstPartPlastic, firstPartGlass);
+        System.out.println("Четвёртая партия мусора " + boxForPlasticAndGlass.getItem());
     }
 }
