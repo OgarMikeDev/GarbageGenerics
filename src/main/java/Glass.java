@@ -4,7 +4,7 @@ public class Glass extends Garbage {
     }
 
     @Override
-    public String display() {
-        return "Glass: " + getTypeGarbage();
+    public void display() {
+        System.out.println("Glass: " + getTypeGarbage());
     }
 }

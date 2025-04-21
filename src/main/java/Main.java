@@ -12,18 +12,22 @@ public class Main {
 
         Box<Plastic> boxForPlastic = new Box<>();
         boxForPlastic.putItem(firstPartPlastic);
-        System.out.println("Первая партия мусора " + boxForPlastic.getItem().display());
+        boxForPlastic.getItem();
+        boxForPlastic.display();
 
         Box<Glass> boxForGlass = new Box<>();
         boxForGlass.putItem(firstPartGlass);
-        System.out.println("Вторая партия мусора " + boxForGlass.getItem().display());
+        boxForGlass.getItem();
+        boxForGlass.display();
 
         Box<Paper> boxForPaper = new Box<>();
         boxForPaper.putItem(firstPartPaper);
-        System.out.println("Третья партия мусора " + boxForPaper.getItem().display());
+        boxForPaper.getItem();
+        boxForPaper.display();
 
         TwoCellsBox<Plastic, Glass> boxForPlasticAndGlass = new TwoCellsBox<>();
         boxForPlasticAndGlass.putItem(firstPartPlastic, firstPartGlass);
-        System.out.println("Четвёртая партия мусора " + boxForPlasticAndGlass.getItem());
+        boxForPlasticAndGlass.getItem();
+        boxForPlasticAndGlass.display();
     }
 }

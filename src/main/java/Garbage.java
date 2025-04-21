@@ -13,5 +13,5 @@ public abstract class Garbage {
         return typeGarbage;
     }
 
-    public abstract String display();
+    public abstract void display();
 }

@@ -4,7 +4,7 @@ public class Paper extends Garbage {
     }
 
     @Override
-    public String display() {
-        return "Paper: " + getTypeGarbage();
+    public void display() {
+        System.out.println("Paper: " + getTypeGarbage());
     }
 }

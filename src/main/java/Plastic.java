@@ -4,7 +4,7 @@ public class Plastic extends Garbage {
     }
 
     @Override
-    public String display() {
-        return "Plastic: " + getTypeGarbage();
+    public void display() {
+        System.out.println("Plastic: " + getTypeGarbage());
     }
 }

@@ -13,9 +13,12 @@ public class TwoCellsBox<T, S> extends Box {
 
     @Override
     public ArrayList<Garbage> getItem() {
-        for (Garbage garbage : allItems) {
-            System.out.println(garbage.display());
-        }
         return allItems;
+    }
+
+    public void display() {
+        for (Garbage garbage : allItems) {
+            garbage.display();
+        }
     }
 }
